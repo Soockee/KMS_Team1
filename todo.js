@@ -15,7 +15,6 @@ var createNewTaskElement = function (taskString) {
   var editInput = document.createElement('input')// text
   // button.edit
   var editButton = document.createElement('button')// edit button
-
   // button.delete
   var deleteButton = document.createElement('button')// delete button
 
@@ -123,23 +122,24 @@ var bindTaskEvents = function (taskListItem, checkBoxEventHandler) {
   // Bind taskCompleted to checkBoxEventHandler.
   checkBox.onchange = checkBoxEventHandler
 }
-
-// cycle over incompleteTaskHolder ul list items
+window.onload = function () {
+  // cycle over incompleteTaskHolder ul list items
 // for each list item
 
-for (var i = 0; i < incompleteTaskHolder.children.length; i++) {
-  // bind events to list items chldren(tasksCompleted)
-  bindTaskEvents(incompleteTaskHolder.children[i], taskCompleted)
+  for (var i = 0; i < incompleteTaskHolder.children.length; i++) {
+    // bind events to list items chldren(tasksCompleted)
+    bindTaskEvents(incompleteTaskHolder.children[i], taskCompleted)
+  }
+
+  // cycle over completedTasksHolder ul list items
+  for (var j = 0; j < completedTasksHolder.children.length; j++) {
+    // bind events to list items chldren(tasksIncompleted)
+    bindTaskEvents(completedTasksHolder.children[i], taskIncomplete)
+  }
+
+  // Issues with usabiliy don't get seen until they are in front of a human tester.
+
+    // prevent creation of empty tasks.
+
+  // Shange edit to save when you are in edit mode.
 }
-
-// cycle over completedTasksHolder ul list items
-for (var j = 0; j < completedTasksHolder.children.length; j++) {
-  // bind events to list items chldren(tasksIncompleted)
-  bindTaskEvents(completedTasksHolder.children[i], taskIncomplete)
-}
-
-// Issues with usabiliy don't get seen until they are in front of a human tester.
-
-// prevent creation of empty tasks.
-
-// Shange edit to save when you are in edit mode.
