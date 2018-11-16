@@ -8,15 +8,15 @@ var createNewTaskElement = function (taskString) {
   var listItem = document.createElement('li')
 
   // input (checkbox)
-  var checkBox = document.createElement('input')// checkbox
+     var checkBox = document.createElement('input');// checkbox
   // label
   var label = document.createElement('label')// label
   // input (text)
-  var editInput = document.createElement('input')// text
+  var editInput   = document.createElement('input')// text
   // button.edit
-  var editButton = document.createElement('button')// edit button
-  // button.delete
-  var deleteButton = document.createElement('button')// delete button
+  var editButton    = document.createElement('button');// edit button
+  // button.delete  
+  var deleteButton = document.createElement('button')M// delete button
 
   label.innerText = taskString
 
@@ -38,7 +38,8 @@ var createNewTaskElement = function (taskString) {
   return listItem
 }
 
-addButton.onclick = function () {
+addButton.onclick =   
+  function () {
   console.log('Add Task...')
   // Create a new list item with the text from the #new-task:
   var listItem = createNewTaskElement(taskInput.value)
@@ -128,13 +129,13 @@ window.onload = function () {
 
   for (var i = 0; i < incompleteTaskHolder.children.length; i++) {
     // bind events to list items chldren(tasksCompleted)
-    bindTaskEvents(incompleteTaskHolder.children[i], taskCompleted)
+    bindTaskEvents(incompleteTaskHolder.children[i], taskCompleted);
   }
 
   // cycle over completedTasksHolder ul list items
   for (var j = 0; j < completedTasksHolder.children.length; j++) {
     // bind events to list items chldren(tasksIncompleted)
-    bindTaskEvents(completedTasksHolder.children[i], taskIncomplete)
+    bindTaskEvents(completedTasksHolder.children[j], taskIncomplete)
   }
 
   // Issues with usabiliy don't get seen until they are in front of a human tester.
