@@ -12,7 +12,7 @@ var createNewTaskElement = function (taskString) {
   // label
   var label = document.createElement('label')// label
   // input (text)
-  var editInput = document.createElement('input')// text
+  var editInput = document.createElement("input")// text
   // button.edit
   var editButton = document.createElement('button')// edit button
   // button.delete
@@ -36,7 +36,7 @@ var createNewTaskElement = function (taskString) {
   listItem.appendChild(editButton)
   listItem.appendChild(deleteButton)
   return listItem
-}
+};
 
 addButton.onclick = function () {
   console.log('Add Task...')
@@ -112,15 +112,23 @@ var bindTaskEvents = function (taskListItem, checkBoxEventHandler) {
   console.log('bind list item events')
   // select ListItems children
   var checkBox = taskListItem.querySelector('input[type=checkbox]')
-  var editButton = taskListItem.querySelector('button.edit')
+  var editButton = taskListItem.querySelector("button.edit")
   var deleteButton = taskListItem.querySelector('button.delete')
 
   // Bind editTask to edit button.
+  
+  
   editButton.onclick = editTask
   // Bind deleteTask to delete button.
+  
+  
+  
+  
   deleteButton.onclick = deleteTask
   // Bind taskCompleted to checkBoxEventHandler.
   checkBox.onchange = checkBoxEventHandler
+  
+  
 }
 
 window.onload = function () {
