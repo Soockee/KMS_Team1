@@ -4,17 +4,17 @@ var incompleteTaskHolder = document.getElementById('incomplete-tasks')// ul of #
 var completedTasksHolder = document.getElementById('completed-tasks')// completed-tasks
 
 // New task list item
-var createNewTaskElement = function (taskString) {
-  var listItem = document.createElement('li')
+var createNewTaskElement = function (taskString){var listItem = document.createElement('li')
 
   // input (checkbox)
   var checkBox = document.createElement("input")// checkbox
   // label
+  
   var label = document.createElement('label')// label
   // input (text)
   var editInput = document.createElement('input')// text
   // button.edit
-  var editButton = document.createElement('button')// edit button
+  var editButton = document.createElement("button")// edit button
   // button.delete
   var deleteButton = document.createElement('button')// delete button
 
@@ -29,7 +29,7 @@ var createNewTaskElement = function (taskString) {
   editButton.innerText = 'Edit'// innerText encodes special characters, HTML does not.
   editButton.className = 'edit'
   deleteButton.innerText = 'Delete'
-  deleteButton.className = 'delete'
+  deleteButton.className = "delete"
 
   // and appending.
   
