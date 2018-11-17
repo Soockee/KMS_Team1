@@ -23,6 +23,7 @@ test('Adding Task', () => {
   expect(document.getElementById('incomplete-tasks').children[0].children[1].innerText).toMatch(testInput)
 })
 
+/*
 test('Deleting Task', () => {
   document.documentElement.innerHTML = html
   const { addButton } = require('../todo.js')
@@ -69,6 +70,8 @@ test('Edit Task', () => {
   expect($('#incomplete-tasks').children().length).toBe(1)
   expect(document.getElementById('incomplete-tasks').children[0].children[1].innerText).toMatch(editedInput)
 })
+
+*/
 
 /** *******OLD-DEBUG-CODE************************************************************************************************
 
