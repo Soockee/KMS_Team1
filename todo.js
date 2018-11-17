@@ -122,6 +122,7 @@ var bindTaskEvents = function (taskListItem, checkBoxEventHandler) {
   // Bind taskCompleted to checkBoxEventHandler.
   checkBox.onchange = checkBoxEventHandler
 }
+
 window.onload = function () {
   // cycle over incompleteTaskHolder ul list items
 // for each list item
@@ -139,7 +140,7 @@ window.onload = function () {
 
   // Issues with usabiliy don't get seen until they are in front of a human tester.
 
-    // prevent creation of empty tasks.
+  // prevent creation of empty tasks.
 
   // Shange edit to save when you are in edit mode.
 }
