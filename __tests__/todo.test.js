@@ -1,5 +1,5 @@
 var $ = require('jquery')
-var html = require('fs').readFileSync('./todo.html').toString()
+var html = require('fs').readFileSync('./index.html').toString()
 const testInput = 'Task_1'
 
 test('Adding Task', () => {
