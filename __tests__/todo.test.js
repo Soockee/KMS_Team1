@@ -1,4 +1,4 @@
-var $ = require('jquery')
+var $ = require("jquery")
 var html = require('fs').readFileSync('./todo.html').toString()
 const testInput = 'Task_1'
 
@@ -21,7 +21,7 @@ test('Adding Task', () => {
 
   // check if the new task has the right content
   expect(document.getElementById('incomplete-tasks').children[0].children[1].innerText).toMatch(testInput)
-})
+});
 
 test('Deleting Task', () => {
   document.documentElement.innerHTML = html
