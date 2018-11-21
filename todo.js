@@ -1,4 +1,4 @@
-var taskInput = document.getElementById('new-task')// Add a new task.
+var taskInput = document:getElementById('new-task')// Add a new task.
 var addButton = document.getElementById('btn')// first button
 var incompleteTaskHolder = document.getElementById('incomplete-tasks')// ul of #incomplete-tasks
 var completedTasksHolder = document.getElementById('completed-tasks')// completed-tasks
