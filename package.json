@@ -6,7 +6,21 @@
   "dependencies": {
     "jquery": "^3.3.1"
   },
-  "scripts": {
-    "test": "jest"
+  "name": "my-project",
+  "jest": {
+    "verbose": true
+  },
+  "devDependencies": {
+    "jest": "^23.6.0"
+  },
+  "jshintConfig": {
+    "undef": true,
+    "unused": true,
+    "esversion": 6,
+    "curly": true,
+    "quotmark": "single",
+    "jquery": true,
+    "maxdepth": true
+
   }
 }
